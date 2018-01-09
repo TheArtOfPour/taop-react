@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class YeastList extends React.Component {
+export default class YeastList extends Component {
   constructor(props) {
     super(props);
 

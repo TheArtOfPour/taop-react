@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class FermentableList extends React.Component {
+export default class FermentableList extends Component {
   constructor(props) {
     super(props);
 

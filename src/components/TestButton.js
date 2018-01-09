@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './component.css';
-export default class TestButton extends React.Component {
+export default class TestButton extends Component {
   constructor(props) {
     super(props);
 

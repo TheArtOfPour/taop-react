@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class HopList extends React.Component {
+export default class HopList extends Component {
   constructor(props) {
     super(props);
 
