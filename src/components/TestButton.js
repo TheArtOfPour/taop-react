@@ -37,7 +37,10 @@ export default class TestButton extends Component {
         fermentables: fermentables,
         hops: hops
     };
+    let results = $('#results');
+    results.html('Fermenting...');
     console.log(recipe);
+    // @todo: use environment.json
     fetch('http://127.0.0.1:5000/test', {
       method: 'POST',
       headers: {
@@ -52,7 +55,7 @@ export default class TestButton extends Component {
         console.log(data);
         let results = $('#results');
         results.html('');
-        for (var i=0; i < data.length; i++) {
+        for (let i=0; i < data.length; i++) {
             let result = data[i];
             let prediction = '<div class="prediction" style="font-size:';
             prediction += 5 + result['confidence'] + 'px';
@@ -71,7 +74,7 @@ export default class TestButton extends Component {
 
   render() {
     return (
-        <button name="test" className="btn btn-3 btn-3e icon-arrow-right" onClick={this.onClickTest}>TEST</button>
+        <button name="test" className="btn btn-3 btn-3e icon-arrow-right" onClick={this.onClickTest}>BREW</button>
     );
   }
 }
