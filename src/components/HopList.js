@@ -14,7 +14,7 @@ export default class HopList extends Component {
   }
 
   HopList() {
-    fetch('http://127.0.0.1:5000/hops')
+    fetch(`${process.env.REACT_APP_API_URL}/hops`)
       .then(response => {
         if (!response.ok) {
           throw Error("Network request failed")
@@ -44,8 +44,8 @@ export default class HopList extends Component {
           <option value='0'>None</option>
           { hops }
         </select>
-        <input className="hopsAmount" type="number" style={{width: '40px'}}></input>
-        <input className="hopsTime" type="number" style={{width: '40px'}}></input>
+        <input className="hopsAmount" type="number" style={{width: '40px'}}/>
+        <input className="hopsTime" type="number" style={{width: '40px'}}/>
       </div>
     );
   }

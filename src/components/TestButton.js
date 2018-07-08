@@ -40,8 +40,8 @@ export default class TestButton extends Component {
     let results = $('#results');
     results.html('Fermenting...');
     console.log(recipe);
-    // @todo: use environment.json
-    fetch('http://127.0.0.1:5000/test', {
+
+    fetch(`${process.env.REACT_APP_API_URL}/test`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

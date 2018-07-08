@@ -14,7 +14,7 @@ export default class FermentableList extends Component {
   }
 
   FermentableList() {
-    fetch('http://127.0.0.1:5000/fermentables')
+    fetch(`${process.env.REACT_APP_API_URL}/fermentables`)
       .then(response => {
         if (!response.ok) {
           throw Error("Network request failed")
@@ -44,7 +44,7 @@ export default class FermentableList extends Component {
           <option value='0'>None</option>
           { fermentables }
         </select>
-        <input className="fermentablesAmount" type="number" style={{width: '40px'}}></input>
+        <input className="fermentablesAmount" type="number" style={{width: '40px'}}/>
       </div>
     );
   }

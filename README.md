@@ -7,8 +7,9 @@ I'll be working over the next few days on getting any remaining code/data deploy
 
 Cheers!
 
-This project relies on [taop-api](https://github.com/TheArtOfPour/taop-api) running @ http://127.0.0.1:5000/
-Future updates will consolidate and make this configurable.
+This project relies on [taop-api](https://github.com/TheArtOfPour/taop-api) running @ http://127.0.0.1:5000
+
+This url is configurable through the .env file (REACT_APP_API_URL=http://127.0.0.1:5000)
 
 Installing: 
 

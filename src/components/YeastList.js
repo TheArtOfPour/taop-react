@@ -14,7 +14,7 @@ export default class YeastList extends Component {
   }
 
   YeastList() {
-    fetch('http://127.0.0.1:5000/yeast')
+    fetch(`${process.env.REACT_APP_API_URL}/yeast`)
       .then(response => {
         if (!response.ok) {
           throw Error("Network request failed")
