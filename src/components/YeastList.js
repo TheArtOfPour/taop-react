@@ -35,12 +35,12 @@ export default class YeastList extends Component {
 
   render() {
     const yeasts = this.state.yeast.map((item, i) => (
-      <option value={ item.id }>{ item.name }</option>
+      <option key={item.id} value={ item.id }>{ item.name }</option>
     ));
 
     return (
         <select name="yeast" className="yeast">
-          <option value='0'>None</option>
+          <option value='0'>none</option>
           { yeasts }
         </select>
     );

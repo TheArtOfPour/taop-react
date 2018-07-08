@@ -5,6 +5,22 @@
 	font-style: normal;
 }
 
+.column {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+}
+
+.fermentables, .hops, .yeast {
+	height: 21px;
+}
+
+.fermentablesAmount, .hopsAmount, .hopsTime {
+	height: 15px;
+	padding-left: 2px;
+	margin-bottom: 4px;
+}
+
 /* General button style (reset) */
 .btn {
 	border: none;

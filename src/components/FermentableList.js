@@ -35,13 +35,13 @@ export default class FermentableList extends Component {
 
   render() {
     const fermentables = this.state.fermentable.map((item, i) => (
-      <option value={ item.id }>{ item.name }</option>
+      <option key={item.id} value={ item.id }>{ item.name }</option>
     ));
 
     return (
       <div>
         <select name="fermentables" className="fermentables">
-          <option value='0'>None</option>
+          <option value='0'>none</option>
           { fermentables }
         </select>
         <input className="fermentablesAmount" type="number" style={{width: '40px'}}/>

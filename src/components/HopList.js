@@ -35,13 +35,13 @@ export default class HopList extends Component {
 
   render() {
     const hops = this.state.hop.map((item, i) => (
-      <option value={ item.id }>{ item.name }</option>
+      <option key={item.id} value={ item.id }>{ item.name }</option>
     ));
 
     return (
       <div>
         <select name="hops" className="hops">
-          <option value='0'>None</option>
+          <option value='0'>none</option>
           { hops }
         </select>
         <input className="hopsAmount" type="number" style={{width: '40px'}}/>

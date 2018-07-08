@@ -7,8 +7,7 @@ import logo from './taop.png';
 import './App.css';
 
 class App extends Component {
-    // @todo: import and cache environment.json
-  static render() {
+  render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -17,11 +16,11 @@ class App extends Component {
         </header>
         <TestButton />
         <div style={{display:'inline-block', width:'900px'}}>
-            <div style={{display:'inline-block', verticalAlign: 'top', width:'290px'}}>
+            <div className="column">
                 <h1>Yeast</h1>
                 <YeastList />
             </div>
-            <div style={{display:'inline-block', verticalAlign: 'top', width:'290px'}}>
+            <div className="column">
                 <h1>Fermentables | lbs</h1>
                 <FermentableList />
                 <FermentableList />
@@ -29,7 +28,7 @@ class App extends Component {
                 <FermentableList />
                 <FermentableList />
             </div>
-            <div style={{display:'inline-block', verticalAlign: 'top', width:'290px'}}>
+            <div className="column">
                 <h1>Hops | oz | min</h1>
                 <HopList />
                 <HopList />
