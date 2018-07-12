@@ -15,6 +15,7 @@
 @media all and (max-width: 899px) {
 	.column-container {
 		width: 290px;
+		margin: auto;
 	}
 }
 
