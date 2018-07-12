@@ -15,7 +15,7 @@ class App extends Component {
           <h1 className="App-title">The Art of Pour</h1>
         </header>
         <TestButton />
-        <div style={{display:'inline-block', width:'900px'}}>
+        <div className="column-container">
             <div className="column">
                 <h1>Yeast</h1>
                 <YeastList />

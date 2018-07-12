@@ -5,6 +5,19 @@
 	font-style: normal;
 }
 
+@media all and (min-width: 900px) {
+	.column-container {
+		display: inline-block;
+		width: 900px;
+	}
+}
+
+@media all and (max-width: 899px) {
+	.column-container {
+		width: 290px;
+	}
+}
+
 .column {
 	display: inline-block;
 	vertical-align: top;
