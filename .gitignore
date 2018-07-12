@@ -23,3 +23,6 @@ yarn-error.log*
 
 # ide
 .idea
+
+# gcloud configuration
+app.yaml
