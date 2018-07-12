@@ -39,7 +39,6 @@ export default class TestButton extends Component {
     };
     let results = $('#results');
     results.html('Fermenting...');
-    console.log(recipe);
 
     fetch(`${process.env.REACT_APP_API_URL}/test`, {
       method: 'POST',
