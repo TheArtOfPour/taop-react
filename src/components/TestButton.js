@@ -16,14 +16,14 @@ export default class TestButton extends Component {
   onClickTest() {
     let yeast = $('.yeast').val();
     let fermentables = [];
-    $('.fermentables').each(function(index) {
+    $('.fermentables').each(function() {
         fermentables.push({id: $(this).val()});
     });
     $('.fermentablesAmount').each(function(index) {
         fermentables[index]['amount'] = $(this).val() === '' ? 0 : $(this).val();
     });
     let hops = [];
-    $('.hops').each(function(index) {
+    $('.hops').each(function() {
         hops.push({id: $(this).val()});
     });
     $('.hopsAmount').each(function(index) {
