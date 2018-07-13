@@ -48,10 +48,8 @@ export default class TestButton extends Component {
       },
       body: JSON.stringify(recipe)
     }).then(function(response) {
-        console.log(response);
         return response.json();
     }).then(function(data) {
-        console.log(data);
         let results = $('#results');
         results.html('');
         for (let i=0; i < data.length; i++) {
@@ -67,7 +65,7 @@ export default class TestButton extends Component {
             results.append(prediction);
         }
     }).catch(err => {
-        console.log(err);
+        console.error(err);
     });
   }
 
