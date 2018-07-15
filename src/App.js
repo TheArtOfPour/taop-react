@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HttpsRedirect from 'react-https-redirect';
 import FermentableList from './components/FermentableList';
 import HopList from './components/HopList';
 import YeastList from './components/YeastList';
@@ -11,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HttpsRedirect>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">The Art of Pour</h1>
@@ -44,7 +42,6 @@ class App extends Component {
             </div>
         </div>
         <div id='results'></div>
-        </HttpsRedirect>
       </div>
     );
   }
