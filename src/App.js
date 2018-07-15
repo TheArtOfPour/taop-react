@@ -14,7 +14,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">The Art of Pour</h1>
         </header>
-        <TestButton />
+        <div className="btn-container">
+          <TestButton />
+        </div>
         <div className="column-container">
             <div className="column">
                 <h1>Yeast</h1>

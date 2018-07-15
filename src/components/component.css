@@ -6,14 +6,14 @@
 }
 
 @media all and (min-width: 900px) {
-	.column-container {
+	.column-container, .btn-container {
 		display: inline-block;
 		width: 900px;
 	}
 }
 
 @media all and (max-width: 899px) {
-	.column-container {
+	.column-container, .btn-container {
 		width: 290px;
 		margin: auto;
 	}
