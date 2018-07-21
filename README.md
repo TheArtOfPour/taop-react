@@ -1,5 +1,5 @@
 # taop-react
-TheArtOfPour React front-end
+Frontend react code for https://theartofpour.com
 
 Thank you to everyone who attended my talk at this year's HomebrewCon.
 
